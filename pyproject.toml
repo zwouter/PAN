@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[project]
+name = "pan_biclustering"
+version = "0.0.2"
+authors = [
+  { name="Wouter Suidgeest", email="wfwouter@gmail.com" },
+]
+description = "Python implementation of the PAN biclustering algorithm"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+    "PAN",
+    "BICLUSTERING",
+    "PARETO-SET-ANALYSIS",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "tqdm",
+    "kmedoids",
+]
+
+[project.urls]
+Homepage = "https://github.com/zwouter/PAN"
+Issues = "https://github.com/zwouter/PAN/issues"
